@@ -1,8 +1,8 @@
-package com.tg.team;
+package com.tg.team.domain;
 
 import java.util.List;
 
-public class QA {
+public class QA implements Member{
     public void test(List<Story> stories) {
         List<Story> implementedStories = stories.stream()
                 .filter(story -> StoryStatus.IMPLEMENTED.equals(story.getStatus()))

@@ -1,4 +1,4 @@
-package com.tg.team;
+package com.tg.team.domain;
 
 import org.junit.jupiter.api.Test;
 

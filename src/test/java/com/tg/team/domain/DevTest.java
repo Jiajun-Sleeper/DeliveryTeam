@@ -1,5 +1,8 @@
-package com.tg.team;
+package com.tg.team.domain;
 
+import com.tg.team.exception.DevNotAvailableException;
+import com.tg.team.exception.NotAssignStoryException;
+import com.tg.team.exception.StoryHasAssignedException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

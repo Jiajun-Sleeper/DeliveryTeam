@@ -1,8 +1,12 @@
-package com.tg.team;
+package com.tg.team.domain;
+
+import com.tg.team.exception.DevNotAvailableException;
+import com.tg.team.exception.NotAssignStoryException;
+import com.tg.team.exception.StoryHasAssignedException;
 
 import java.util.Objects;
 
-public class Dev {
+public class Dev implements Member{
     private Story story;
 
     public void accept(Story story) {

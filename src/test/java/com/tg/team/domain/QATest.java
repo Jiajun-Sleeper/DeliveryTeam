@@ -1,4 +1,4 @@
-package com.tg.team;
+package com.tg.team.domain;
 
 import org.junit.jupiter.api.Test;
 
@@ -74,7 +74,7 @@ public class QATest {
 
         assertEquals(1, remainingStoryNumber);
         assertEquals(story3, stories.get(0));
-        
+
         assertEquals(StoryStatus.UNDERTEST, story1.getStatus());
         assertEquals(StoryStatus.UNDERTEST, story2.getStatus());
         assertEquals(StoryStatus.IMPLEMENTED, story3.getStatus());

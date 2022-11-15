@@ -1,4 +1,4 @@
-package com.tg.team;
+package com.tg.team.domain;
 
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 
 import static java.util.stream.Collectors.toList;
 
-public class BA {
+public class BA implements Member{
     public List<Story> createStories() {
         return IntStream.range(0, ThreadLocalRandom.current().nextInt(1, 4)).mapToObj(i -> new Story()).collect(toList());
     }

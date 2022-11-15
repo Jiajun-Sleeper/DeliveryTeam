@@ -1,5 +1,6 @@
-package com.tg.team;
+package com.tg.team.domain;
 
+import com.tg.team.exception.StoryHasCompletedException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -51,7 +52,7 @@ public class StoryTest {
         story.nextStatus();
         story.nextStatus();
         story.nextStatus();
-        
+
         StoryStatus storyStatus = story.nextStatus();
 
         assertEquals(StoryStatus.COMPLETED, storyStatus);

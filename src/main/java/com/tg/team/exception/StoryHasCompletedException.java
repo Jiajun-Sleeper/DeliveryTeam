@@ -1,4 +1,4 @@
-package com.tg.team;
+package com.tg.team.exception;
 
 public class StoryHasCompletedException extends RuntimeException{
 

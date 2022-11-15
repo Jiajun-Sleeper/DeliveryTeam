@@ -1,4 +1,6 @@
-package com.tg.team;
+package com.tg.team.domain;
+
+import com.tg.team.exception.StoryHasCompletedException;
 
 public class Story {
 
