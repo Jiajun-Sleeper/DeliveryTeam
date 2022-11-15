@@ -14,7 +14,7 @@ public class Story {
             case ASSIGNED -> this.storyStatus = StoryStatus.IMPLEMENTED;
             case IMPLEMENTED -> this.storyStatus = StoryStatus.UNDERTEST;
             case UNDERTEST -> this.storyStatus = StoryStatus.COMPLETED;
-            default -> throw new StoryHasCompletedException("任务已完成，状态无法更新");
+            default -> throw new StoryHasCompletedException();
         }
         return this.storyStatus;
     }
