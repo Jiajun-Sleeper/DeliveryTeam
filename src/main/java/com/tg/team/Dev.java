@@ -25,4 +25,7 @@ public class Dev {
         this.story = null;
     }
 
+    public boolean isFree() {
+        return Objects.isNull(this.story);
+    }
 }

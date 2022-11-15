@@ -58,4 +58,19 @@ public class DevTest {
 
         assertTrue(exception.getMessage().contains("未分配任务"));
     }
+
+    @Test
+    void shouldReturnTrue_givenFreeDev_whenCheckDevIsFree() {
+        Dev dev = new Dev();
+
+        assertTrue(dev.isFree());
+    }
+
+    @Test
+    void shouldReturnFalse_givenBusyDev_whenCheckDevIsFree() {
+        Dev dev = new Dev();
+        dev.accept(new Story());
+
+        assertFalse(dev.isFree());
+    }
 }
